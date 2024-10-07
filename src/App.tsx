@@ -1,5 +1,6 @@
 import './App.css'
-import Navbar from './components/Navbar'
+import Background from './components/Background/Background'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
 
@@ -7,8 +8,12 @@ function App() {
     <>
       <div>
         <Navbar/>
-        Whart
       </div>
+      <div>
+        <Background/>
+      </div>
+      
+      
     </>
   )
 }
