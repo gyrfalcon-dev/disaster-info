@@ -1,20 +1,19 @@
 import './App.css'
-import Background from './components/Background/Background'
-import Navbar from './components/Navbar/Navbar'
-
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from './pages/Home.tsx'
+import About from './pages/About.tsx'
 function App() {
 
   return (
-    <>
-      <div>
-        <Navbar/>
-      </div>
-      <div>
-        <Background/>
-      </div>
-      
-      
-    </>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 
