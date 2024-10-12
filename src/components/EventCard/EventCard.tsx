@@ -5,9 +5,12 @@ interface Props {
 }
 const EventCard = ({ name, text }: Props) => {
   return (
+    //make title top only
     <button className="eventcard">
-      <h1>{name}</h1>
-      <p>{text}</p>
+      <h1 className="eventname thumbnail">{name}</h1>
+      <div className="content">
+        <p className="summary">{text}</p>
+      </div>
     </button>
   );
 };
