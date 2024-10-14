@@ -7,6 +7,13 @@
   border-width: 0;
   margin-top: 55px;
   background-color: transparent;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 250ms ease-in-out;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+.eventcard:hover {
+  transform: scale(1.015);
 }
 .thumbnail {
   object-fit: cover;
