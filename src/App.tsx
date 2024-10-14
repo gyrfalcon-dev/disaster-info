@@ -5,7 +5,7 @@ import About from "./pages/About.tsx";
 import Event from "./pages/Event.tsx";
 function App() {
   return (
-    <div>
+    <div className="main">
       <BrowserRouter>
         <Routes>
           <Route index element={<Events />} />
