@@ -6,6 +6,7 @@
   border-style: solid;
   border-width: 0;
   margin-top: 55px;
+  background-color: transparent;
 }
 .thumbnail {
   object-fit: cover;
@@ -22,6 +23,7 @@
   display: flex;
   flex-direction: row;
   padding: 5px;
+  background-color: rgba(245, 245, 245, 0.85);
 }
 .eventname {
   vertical-align: top;

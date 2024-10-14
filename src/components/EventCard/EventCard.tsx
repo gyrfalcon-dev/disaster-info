@@ -1,12 +1,14 @@
 import "./EventCard.css";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
 interface Props {
   name: string;
   text: string;
+  url: string;
 }
-const EventCard = ({ name, text }: Props) => {
+const EventCard = ({ name, text, url }: Props) => {
+  const navigate = useNavigate();
   return (
-    //make title top only
-    <button className="eventcard">
+    <button onClick={() => navigate(url)} className="eventcard">
       <h1 className="eventname thumbnail">{name}</h1>
       <div className="content">
         <p className="summary">{text}</p>
