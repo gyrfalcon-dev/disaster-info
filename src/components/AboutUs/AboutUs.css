@@ -1,0 +1,11 @@
+.aboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.paragraph {
+  font-size: 25px;
+  max-width: 50rem;
+  padding: 1rem;
+}

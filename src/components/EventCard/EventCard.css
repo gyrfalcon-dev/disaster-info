@@ -1,20 +1,21 @@
 .eventcard {
-  width: 50em;
+  max-width: 50rem;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
   text-align: left;
   border-style: solid;
-  border-radius: 0px;
   border-width: 0;
-  margin-top: 75px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+  border-radius: 10px;
   background-color: transparent;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   transition: all 250ms ease-in-out;
-  transform: translateZ(0);
-  backface-visibility: hidden;
 }
 .eventcard:hover {
-  transform: scale(1.015);
+  transform: translateY(-5px);
 }
 .thumbnail {
   object-fit: cover;
@@ -36,15 +37,23 @@
   background-color: rgba(245, 245, 245, 0.85);
 }
 .eventname {
+  display: flex;
   border-radius: 10px 10px 0 0;
   border-width: 0;
-  vertical-align: top;
   margin: 0;
-  padding-left: 5px;
-  font-size: 45px;
+  font-size: 50px;
   background-color: rgb(175, 175, 175);
-  font-weight: 600;
+  font-weight: 700;
+  align-items: center;
+  text-align: center;
 }
 .summary {
   font-size: 25px;
+}
+.icon {
+  margin-top: 10px;
+  margin: 1px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 }
