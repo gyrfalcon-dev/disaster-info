@@ -1,3 +1,12 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+:root {
+  --clr-1: rgb(178, 49, 253);
+  --clr-2: rgba(0, 0, 255);
+}
 .eventcard {
   max-width: 50rem;
   padding: 0;
@@ -6,19 +15,64 @@
   margin-right: 1rem;
   text-align: left;
   border-style: solid;
-  border-width: 0;
+  border-color: transparent;
   margin-top: 38px;
   margin-bottom: 38px;
   border-radius: 10px;
   background-color: transparent;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
   transition: all 250ms ease-in-out;
+  border-width: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .eventcard:hover {
   transform: translateY(-5px);
 }
+.eventcard:hover::before {
+  opacity: 1;
+}
+.eventcard:hover::after {
+  opacity: 1;
+}
+.eventcard::before,
+.eventcard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: -5px;
+  border-radius: 10px;
+  animation: rotation 10s linear infinite;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-1),
+    var(--clr-2),
+    var(--clr-1)
+  );
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+.eventcard::after {
+  filter: blur(0.5rem);
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
 .thumbnail {
-  object-fit: cover;
+  margin: 0;
+  border-radius: 5px 5px 0 0;
+  object-fit: contain;
   background-image: linear-gradient(
       to left,
       rgba(255, 0, 0, 0),
@@ -27,10 +81,13 @@
     url("../../assets/hurricanebackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  border-width: 0;
+  padding: 0;
 }
 .content {
+  margin: 0;
   border-width: 0;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 5px 5px;
   display: flex;
   flex-direction: row;
   padding: 5px;
@@ -38,14 +95,14 @@
 }
 .eventname {
   display: flex;
-  border-radius: 10px 10px 0 0;
-  border-width: 0;
+  border-radius: 5px 5x 0 0;
+  padding: 0;
   margin: 0;
   font-size: 50px;
-  background-color: rgb(175, 175, 175);
   font-weight: 700;
   align-items: center;
   text-align: center;
+  border-width: 0;
 }
 .summary {
   font-size: 25px;
@@ -56,4 +113,5 @@
   background-position: center;
   background-size: cover;
   text-align: center;
+  object-fit: contain;
 }

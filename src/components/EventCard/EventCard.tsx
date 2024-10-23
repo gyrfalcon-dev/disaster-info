@@ -11,7 +11,7 @@ const EventCard = ({ name, text, url, type }: Props) => {
   const navigate = useNavigate();
   return (
     <button onClick={() => navigate(url)} className="eventcard">
-      <h1 className="eventname thumbnail">
+      <h1 className="thumbnail eventname">
         <img
           className="icon"
           src="/src/assets/hurricaneicon.png"
