@@ -1,0 +1,66 @@
+.news-section {
+  background-color: rgb(223, 223, 223);
+  overflow: hidden;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.news-section > h1 {
+  font-weight: 700;
+  font-size: 100px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 6rem;
+}
+.news-container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 24rem;
+  overflow: hidden;
+}
+.scroll-element {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  pointer-events: none;
+}
+.scroll-parent:hover .primary,
+.scroll-parent:hover .secondary {
+  animation-play-state: paused;
+}
+.scroll-parent {
+  position: relative;
+  width: 100vw;
+  height: 25rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  pointer-events: none;
+}
+.primary {
+  animation: primary 30s linear infinite;
+}
+.secondary {
+  animation: secondary 30s linear infinite;
+}
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}

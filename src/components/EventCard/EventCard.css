@@ -9,13 +9,13 @@
 }
 .eventcard {
   max-width: 50rem;
+  border-color: transparent;
   padding: 0;
   margin-top: 0;
   margin-left: 1rem;
   margin-right: 1rem;
   text-align: left;
   border-style: solid;
-  border-color: transparent;
   margin-top: 38px;
   margin-bottom: 38px;
   border-radius: 10px;
@@ -23,9 +23,8 @@
   position: relative;
   transition: all 250ms ease-in-out;
   border-width: 0;
-  border-radius: 10px;
   box-sizing: border-box;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 12px #00000088;
 }
 .eventcard:hover {
   transform: translateY(-5px);
@@ -95,7 +94,7 @@
 }
 .eventname {
   display: flex;
-  border-radius: 5px 5x 0 0;
+  border-radius: 5px 5px 0 0;
   padding: 0;
   margin: 0;
   font-size: 50px;

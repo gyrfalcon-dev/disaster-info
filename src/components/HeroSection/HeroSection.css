@@ -15,11 +15,12 @@
   object-fit: contain;
 }
 .hero-container > h1 {
-  color: rgba(208, 208, 226, 0.507);
+  color: rgba(255, 255, 255, 0.507);
   font-size: 150px;
   margin-top: -200px;
   letter-spacing: 5rem;
   font-weight: 700;
-  text-shadow: -3px -3px 0 #fffffffd, 3px 3px 0 #000;
+  text-shadow: -4px -4px 0 #fffffffd, 4px 4px 15px #000;
   user-select: none;
+  filter: blur(0.5);
 }

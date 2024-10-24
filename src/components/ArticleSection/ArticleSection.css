@@ -1,0 +1,20 @@
+.article-section {
+  background-color: rgba(205, 212, 240, 0.925);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.article-section > h1 {
+  color: black;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 700;
+  padding-bottom: 4rem;
+}
+.article-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
