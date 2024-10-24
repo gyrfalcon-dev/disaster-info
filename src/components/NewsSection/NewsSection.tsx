@@ -9,46 +9,46 @@ function NewsSection() {
         <div className="scroll-parent">
           <div className="scroll-element primary">
             <NewsCard
-              text="hi"
-              url="/events"
-              image="/src/assets/background.jpg"
+              text="Associated Press"
+              url="https://apnews.com/hub/hurricane-helene"
+              image="/src/assets/NewsPictures/6.jpg"
             ></NewsCard>
             <NewsCard
-              text="hi"
-              url="/events"
-              image="/src/assets/background.jpg"
+              text="Britannica"
+              url="https://www.britannica.com/event/Hurricane-Helene"
+              image="/src/assets/NewsPictures/7.webp"
             ></NewsCard>
             <NewsCard
-              text="hi"
-              url="/events"
-              image="/src/assets/background.jpg"
+              text="BBC Weather"
+              url="https://www.bbc.com/weather/articles/c1jdzwgepgzo?form=MG0AV3"
+              image="/src/assets/NewsPictures/8.webp"
             ></NewsCard>
             <NewsCard
-              text="hi"
-              url="/events"
-              image="/src/assets/background.jpg"
+              text="USA TODAY"
+              url="https://www.usatoday.com/story/news/nation/2024/09/30/asheville-north-carolina-helene-damage-flooding-photos/75448712007/"
+              image="/src/assets/NewsPictures/9.webp"
             ></NewsCard>
           </div>
           <div className="scroll-element secondary">
             <NewsCard
-              text="hi"
-              url="/events"
-              image="/src/assets/background.jpg"
+              text="Associated Press"
+              url="https://apnews.com/hub/hurricane-helene"
+              image="/src/assets/NewsPictures/6.jpg"
             ></NewsCard>
             <NewsCard
-              text="hi"
-              url="/events"
-              image="/src/assets/background.jpg"
+              text="Britannica"
+              url="https://www.britannica.com/event/Hurricane-Helene"
+              image="/src/assets/NewsPictures/7.webp"
             ></NewsCard>
             <NewsCard
-              text="hi"
-              url="/events"
-              image="/src/assets/background.jpg"
+              text="BBC Weather"
+              url="https://www.bbc.com/weather/articles/c1jdzwgepgzo?form=MG0AV3"
+              image="/src/assets/NewsPictures/8.webp"
             ></NewsCard>
             <NewsCard
-              text="hi"
-              url="/events"
-              image="/src/assets/background.jpg"
+              text="USA TODAY"
+              url="https://www.usatoday.com/story/news/nation/2024/09/30/asheville-north-carolina-helene-damage-flooding-photos/75448712007/"
+              image="/src/assets/NewsPictures/9.webp"
             ></NewsCard>
           </div>
         </div>

@@ -42,10 +42,10 @@
   pointer-events: none;
 }
 .primary {
-  animation: primary 30s linear infinite;
+  animation: primary 30s linear reverse infinite;
 }
 .secondary {
-  animation: secondary 30s linear infinite;
+  animation: secondary 30s linear reverse infinite;
 }
 @keyframes primary {
   from {

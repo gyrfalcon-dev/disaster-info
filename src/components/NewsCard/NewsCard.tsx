@@ -8,14 +8,14 @@ interface Props {
 
 const NewsCard = ({ text, url, image }: Props) => {
   return (
-    <button className="news-card">
+    <a href={url} className="news-card">
       <div
         className="news-background"
         style={{ backgroundImage: `url(${image})` }}
       >
         <h1>{text}</h1>
       </div>
-    </button>
+    </a>
   );
 };
 
